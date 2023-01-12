@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/homepage"
+        android:title="Homepage"
+        android:icon="@drawable/house_solid"
+        />
+
+    <item android:id="@+id/pantry"
+        android:title="Pantry"
+        android:icon="@drawable/box_open_solid"
+        />
+
+    <item android:id="@+id/recipes"
+        android:title="Recipes"
+        android:icon="@drawable/utensils_solid"
+        />
+
+    <item android:id="@+id/profile"
+        android:title="Profile"
+        android:icon="@drawable/user_solid"
+        />
+
+</menu>
