@@ -48,6 +48,7 @@ public class RecipesFragment extends Fragment {
         dialog.setTitle("Fooding");
 
         searchView = getActivity().findViewById(R.id.searchView_id);
+
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
             public boolean onQueryTextSubmit(String s) {
@@ -75,8 +76,8 @@ public class RecipesFragment extends Fragment {
         spinner.setOnItemSelectedListener(spinnerSelectedListener);
 
         manager = new RequestManager(getContext());
-        manager.getRandomRecipes(randomRecipeResponseListener, tags);
-        dialog.show();
+        //manager.getRandomRecipes(randomRecipeResponseListener, tags);
+        //dialog.show();
     }
 
     private final RandomRecipeResponseListener randomRecipeResponseListener = new RandomRecipeResponseListener() {
