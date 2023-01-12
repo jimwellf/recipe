@@ -37,7 +37,7 @@ public class SignupActivity extends AppCompatActivity {
                     Intent intent = new Intent(this, LoginActivity.class);
                     startActivity(intent);
                 } else {
-                    Toast.makeText(this, "Something wrong happened!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this, "Something Went Wrong!", Toast.LENGTH_SHORT).show();
                 }
             } catch (IOException e) {
                 e.printStackTrace();

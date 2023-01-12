@@ -31,6 +31,7 @@ public class LoginActivity extends AppCompatActivity {
                 String txt = localStorageController.read(  usernameEditText.getText() + ".txt");
 
                 if(!passwordEditText.getText().toString().isEmpty() && passwordEditText.getText().toString().equals(txt)) {
+                    localStorageController.write("isLogged", "true");
                     goToHomepage();
                 } else {
                     showNewAccSnackbar(view);

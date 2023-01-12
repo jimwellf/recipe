@@ -17,7 +17,10 @@
             android:layout_width="250dp"
             android:layout_height="match_parent"
             app:iconifiedByDefault="false"
-            app:queryHint="Search a recipe" />
+            app:queryHint="Search a recipe"
+            android:inputType="text"
+            android:imeOptions="actionDone"
+            />
 
         <Spinner
             android:id="@+id/spinner_tags"

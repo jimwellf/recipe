@@ -4,21 +4,29 @@
     <item android:id="@+id/homepage"
         android:title="Homepage"
         android:icon="@drawable/house_solid"
+        android:color="@color/blue"
+        android:tint="@color/blue"
         />
 
     <item android:id="@+id/pantry"
         android:title="Pantry"
         android:icon="@drawable/box_open_solid"
+        android:color="@color/blue"
+        android:tint="@color/blue"
         />
 
     <item android:id="@+id/recipes"
         android:title="Recipes"
         android:icon="@drawable/utensils_solid"
+        android:color="@color/blue"
+        android:tint="@color/blue"
         />
 
     <item android:id="@+id/profile"
         android:title="Profile"
         android:icon="@drawable/user_solid"
+        android:color="@color/blue"
+        android:tint="@color/blue"
         />
 
 </menu>

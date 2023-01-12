@@ -45,7 +45,9 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/login" />
+        app:layout_constraintTop_toBottomOf="@+id/login"
+        android:imeOptions="actionDone"
+        />
 
     <EditText
         android:id="@+id/password_id"
@@ -60,7 +62,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/username_id" />
+        app:layout_constraintTop_toBottomOf="@+id/username_id"
+        android:imeOptions="actionDone"/>
 
     <TextView
         android:id="@+id/login"
@@ -72,10 +75,11 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/loginbutton_id"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="@color/white"
         android:text="LOGIN"
         android:background="@drawable/rounder_corner"
         android:backgroundTint="@color/blue"

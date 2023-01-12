@@ -84,12 +84,12 @@ public class RecipesFragment extends Fragment {
         @Override
         public void didFetch(RandomRecipeApiResponse response, String message) {
             dialog.dismiss();
-            recyclerView = getActivity().findViewById(R.id.recycler_random);
-            recyclerView.setHasFixedSize(true);
-            recyclerView.setLayoutManager(new GridLayoutManager(getContext(), 1));
+            if(getActivity() != null) {
+                recyclerView = getActivity().findViewById(R.id.recycler_random);
+                recyclerView.setLayoutManager(new GridLayoutManager(getContext(), 1));
+            }
 
             randomRecipeAdapter = new RandomRecipeAdapter(getContext(), response.recipes);
-
             recyclerView.setAdapter(randomRecipeAdapter);
         }
 
