@@ -11,9 +11,9 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-import com.fooding.recipe.LoginActivity;
+import com.fooding.recipe.Login;
 import com.fooding.recipe.R;
-import com.fooding.recipe.SignupActivity;
+import com.fooding.recipe.SignUp;
 
 public class ProfileFragment extends Fragment {
 
@@ -30,13 +30,13 @@ public class ProfileFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         loginButton = view.findViewById(R.id.loginbutton_id);
         loginButton.setOnClickListener(view1 -> {
-            Intent intent = new Intent(this.getContext(), LoginActivity.class);
+            Intent intent = new Intent(this.getContext(), Login.class);
             startActivity(intent);
         });
 
         signupButton = view.findViewById(R.id.signupbutton_id);
         signupButton.setOnClickListener(view1 -> {
-            Intent intent = new Intent(this.getContext(), SignupActivity.class);
+            Intent intent = new Intent(this.getContext(), SignUp.class);
             startActivity(intent);
         });
     }

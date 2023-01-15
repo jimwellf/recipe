@@ -42,7 +42,7 @@ public class LoggedinFragment extends Fragment {
             }
 
             intent.putExtra("isLogged", "false");
-            Toast.makeText(getContext(), "Logged Out!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getContext(), "Successfully Logged Out!", Toast.LENGTH_SHORT).show();
             startActivity(intent);
         });
     }

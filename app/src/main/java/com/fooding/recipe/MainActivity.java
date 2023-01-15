@@ -14,6 +14,7 @@ import com.fooding.recipe.Fragments.PantryFragment;
 import com.fooding.recipe.Fragments.ProfileFragment;
 import com.fooding.recipe.Fragments.RecipesFragment;
 import com.fooding.recipe.databinding.ActivityMainBinding;
+import com.google.firebase.FirebaseApp;
 
 import java.io.IOException;
 
@@ -26,10 +27,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        showFragment(HomepageFragment.class);
-
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main);
 
+        FirebaseApp.initializeApp(this);
+
+        showFragment(HomepageFragment.class);
         checkOnline();
         configBottomNav();
     }
@@ -40,10 +42,6 @@ public class MainActivity extends AppCompatActivity {
             isLogged = Boolean.parseBoolean(localStorageController.read("isLogged"));
         } catch (IOException e) {
             e.printStackTrace();
-        }
-
-        if(isLogged == true) {
-            Toast.makeText(this, "Logged In!", Toast.LENGTH_SHORT).show();
         }
     }
     private void configBottomNav() {
